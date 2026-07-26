@@ -6,12 +6,12 @@ import { toast } from "sonner"
 import type { ColumnDef } from "@tanstack/react-table"
 import { DataTable } from "./components/data-table"
 
-async function getData(): Promise<{ data: User[]; message: string }> {
-  // Fetch data from your API here.
-  const res = await fetch(`${env.API_URL}/users`)
-  const resJson = await res.json()
-  return resJson;
-}
+    async function getData(): Promise<{ data: User[]; message: string }> {
+    // Fetch data from your API here.
+    const res = await fetch(`${env.API_URL}/users`)
+    const resJson = await res.json()
+    return resJson;
+    }
 
 export function App() {
   const [users, setUsers] = useState<User[]>([])
