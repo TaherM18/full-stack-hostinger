@@ -10,6 +10,7 @@ const corsOptions = {
     "http://localhost:5173",
     "http://localhost:5174",
     "http://localhost:3000",
+    "http://200.141.4.141:5173",
   ],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true,
